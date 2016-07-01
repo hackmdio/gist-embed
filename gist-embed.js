@@ -28,7 +28,7 @@
     return lineNumbers;
   }
 
-  $.fn.gist = function() {
+  $.fn.gist = function(callback) {
     return this.each(function() {
       var $elem = $(this),
         id,
@@ -185,6 +185,9 @@
         },
         error: function(jqXHR, textStatus) {
           $elem.html('Failed loading gist ' + url + ': ' + textStatus);
+        },
+        complete: function() {
+            if(callback && typeof callback === 'function') callback();
         }
       });
 
