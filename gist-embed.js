@@ -187,7 +187,7 @@
           $elem.html('Failed loading gist ' + url + ': ' + textStatus);
         },
         complete: function() {
-            if(callback && typeof callback === 'function') callback();
+          if(typeof callback === 'function') callback();
         }
       });
 
