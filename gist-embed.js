@@ -27,10 +27,10 @@
     }
     return lineNumbers;
   }
-
+  
   //object to cache the calls made to the same gist-id
   var gistCache = {};
-
+  
   $.fn.gist = function(callback) {
     return this.each(function() {
       var $elem = $(this),
