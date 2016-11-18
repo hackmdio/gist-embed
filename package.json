@@ -1,6 +1,6 @@
 {
   "name": "gist-embed",
-  "version": "2.4",
+  "version": "2.6.0",
   "description": "Ultra powered gist embedding for your website",
   "main": "gist-embed.js",
   "scripts": {
