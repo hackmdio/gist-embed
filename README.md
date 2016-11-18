@@ -43,6 +43,15 @@ See http://blairvanderhoof.com/gist-embed/ for all possible ways to use gist-emb
 
 ###Change log
 
+####Version 2.6 (Sep 4, 2016)
+* Now you can enable caching with data-gist-enable-cache="true". Future requests of the same gist won't hit the server!
+* https://github.com/blairvanderhoof/gist-embed/pull/55
+* Thanks @kiran3807
+
+####Version 2.5 (July 6, 2015)
+* Merged pull request https://github.com/blairvanderhoof/gist-embed/pull/53
+* You can now specify a callback when your gist is finished loading. Thanks @jackycute!
+
 ####Version 2.4 (Oct 13, 2015)
 * Merged pull request https://github.com/blairvanderhoof/gist-embed/pull/46 
 * Fixes global var bug and adds 'use strict' to show linter warnings and hopefully prevent future errors. Thanks @bardzusny!
